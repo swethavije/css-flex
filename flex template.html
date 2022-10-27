@@ -48,6 +48,7 @@
 			   padding-top:25px;
 			   padding-bottom:25px;
 			   margin-top:20px;
+			   margin-bottom:20px;
 			   }
 		.banner h3{
 		       color:lightgray;
@@ -73,6 +74,8 @@
 		.skill{
 		      display:flex;
 			  text-align:left;
+			  margin-top:15px;
+			  margin-bottom:15px;
 			  }
 		.skill img{
 		        width:50px;
@@ -83,10 +86,14 @@
 				}
 		.course{
 		        word-spacing:100px;
-				border-bottom:1px solid black;
+				border-bottom:1px solid gray;
+				margin-top:20px;
+				margin-bottom:20px;
 				}
 		.education{
 		        display:flex;
+				margin-top:20px;
+				margin-bottom:20px;
 				}
 		.education img{
 		        width:50px;
@@ -98,20 +105,44 @@
 		.container{
 		       display:flex;
 			   height:130px;
+			   border-bottom:1px solid gray;
 			   }
 		.container >div{
 		       background-color:#f1f1f1;
 			   margin:10px;
 			   padding:20px;
-			   font-size:20px;
+			   font-size:18px;
 			   }
 		      
 	    .a{
 		   border-left-style:solid;
 		   padding-left:20px;
-		   line-height:0.9;
+		   line-height:1.0;
 		   flex-grow:5;
 		   }
+		 .project{
+		        display:flex;
+				text-align:left;
+				margin-top:30px;
+				margin-bottom:20px;
+				}
+		 .project img{
+	             width:50px;
+                 }
+          .project p{
+                  flex-grow:1;
+                  padding-left:30px;
+                }
+           .b{
+              border-left-style:solid;
+              padding-left:20px;
+              line-height:1.2;
+			  margin-bottom:20px;
+              }			  
+		    .con{
+			    margin-top:20px;
+				margin-bottom:20px;
+				}
 
 		   
 			
@@ -207,34 +238,37 @@
 			</div>
 	 </section>
 	<!--education div end--->
-	 </section>
-	 <!--<section>
+	 
+	 <section>
+	  <!--project div-->
 	        <h2>Projects</h2>
-			<div>
+			<div class="project">
 			     <img src="image/project-pic.png" width="50" height="auto" alt="project pc">
 				 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-			</div>
-			<div>
+			</div><br>
+			<div class="b">
 			      <p>Final year project</p>
-				  <h4>Project Name</h4>
+				  <h4><b>Project Name</b></h4>
 				  <p> Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,<br/> and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
 				  <p>Techologies used:Java,MYSQL,DBMS</p>
 				  <p>Team Size:4members</p>
-			</div>
-			<div>
+			</div><br>
+			<div class="b">
 			      <p>Final year project</p>
-				  <h4>Project Name</h4>
+				  <h4><b>Project Name</b></h4>
 				  <p> Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,<br/> and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
 				  <p>Techologies used:Java,MYSQL;DBMS</p>
 				  <p>Team Size:4members</p>
 			</div>
 	 </section>
-	 <hr>
+	 <!---project div end-->
 	 <section>
+	 <!--contacts div-->
 	         <h2>Contacts</h2>
-			 <div>
+			 
+			 <div class="con">
 			     <p>We are just call away i'm active in all possible communication media.Make use of your prefred one given below.</p>
-			 <div>
+			 <div class="con">
 				 <span><img src="image/contact2.png" width="30" height="auto" alt="phone"></span>
 				 <span><img src="image/Email.png" width="30" height="auto" alt="mail"></span>
 				 <span><img src="image/internet.png" width="30" height="auto" alt="chrome"></span>
@@ -246,6 +280,7 @@
 			      <p><a href="#">www.sample.com</a>|All rights reserved</p>
 			 </div>
 	 </section>
-	 <hr>-->
+	 <!---contact div end--->
+	 </section>
 </body>
 </html>
