@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="UTF-8">
+	  <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+	  <title>Flex template</title>
+	  <style>
+	     *{
+		    margin:0;
+			padding:0;
+			box-sizing:border-box;
+			} 
+		body{
+		    background-color:lightgray;
+			font-family:Arial,sans-serif;
+			}
+		.flex-container{
+		     width:1100px;
+			 background-color:white;
+			 margin:0 auto;
+			 padding-left:50px;
+			 padding-right:50px;
+			 padding-top:25px;
+			 padding-bottom:25px;
+			 }
+		.header-info{
+		     display:flex;
+			 align-items:center;
+			 }
+		.user-img img{
+		      width:120px;
+			  }
+		.user-info{
+		      flex-grow:1;
+			  padding-left:30px;
+			  }
+		.user-info h1{
+		       padding-bottom:10px;
+			   border-bottom:1px solid black;
+			   }
+		.user-nav{
+		       padding-top:10px;
+			   }
+		.banner{
+		       background-color:black;
+			   color:white;
+			   text-align:center;
+			   padding-top:25px;
+			   padding-bottom:25px;
+			   margin-top:20px;
+			   }
+		.banner h3{
+		       color:lightgray;
+			   font-size:20px;
+			   padding-bottom:20px;
+			   }
+		.banner h2{
+		       font-size:45px;
+			   padding-bottom:20px;
+			   }
+		.banner h4{
+		       color:#ccc;
+			   font-size:15px;
+			   padding-bottom:30px;
+			   }
+		.banner a{
+		        display:inline-block;
+				border:1px solid white;
+				color:white;
+				text-decoration:none;
+				padding:15px 30px;
+			   }
+		.skill{
+		      display:flex;
+			  text-align:left;
+			  }
+		.skill img{
+		        width:50px;
+				}
+		.skill p{
+		         flex-grow:1;
+		        padding-left:30px;
+				}
+		.course{
+		        word-spacing:100px;
+				border-bottom:1px solid black;
+				}
+		.education{
+		        display:flex;
+				}
+		.education img{
+		        width:50px;
+				}
+		.education p{
+		        flex-grow:1;
+				padding-left:30px;
+				}
+		.container{
+		       display:flex;
+			   height:130px;
+			   }
+		.container >div{
+		       background-color:#f1f1f1;
+			   margin:10px;
+			   padding:20px;
+			   font-size:20px;
+			   }
+		      
+	    .a{
+		   border-left-style:solid;
+		   padding-left:20px;
+		   line-height:0.9;
+		   flex-grow:5;
+		   }
+
+		   
+			
+	   </style>
+</head>
+<body>
+     <section class="flex-container">
+	 <!--header info--->
+	 <div class="header-info">
+	     <div class="user-img">
+           <img src="image/picture5.jpg" alt="user picture">
+		   </div>
+		 <div class="user-info">
+            <h1>V.SWETHA</h1>
+	 <div class="user-nav">
+	        <a href="#">About</a>
+			<a href="#">Skill</a>
+			<a href="#">Education</a>
+			<a href="#">Projects</a>
+			<a href="#">Contact</a>
+	 </div>
+	      </div>
+		  </div>
+		  <!---header info end--->
+	<!--banner div-->
+	<section>
+	<div class="banner">
+	        <h3>Hello,World</h3>
+			<h2>I'm a UI Developer</h2>
+			<h4>from Chennai,India.</h4>
+			<a href="#">Download my Resume</a>
+	 </div>
+	 <!--banner div end--->
+	 </section>
+	 <!--skill div-->
+	 <section>
+	       <div>
+	        <h2>Skill</h2>
+			<div class="skill">
+			     <img src="image/skill-pic.png" width="50" height="auto" alt="skills">
+			     <p>Lorem ipsm is a simply dummuy text of the printing and typesetting industry.<br>Lorem ipsum dolor sit amet</p>
+			</div>
+			<div class="course">
+			     <span>HTML</span>
+				 <span>CSS</span>
+				 <span>Photoshop</span>
+				 <span>jquery</span>
+				 <span>Java</span>
+				 <span>MYSQL</span>
+			</div>
+			</div>
+	 </section>
+	 <!---skill div end-->
+	  <section>
+	  <!---education div--->
+	        <h2>Education</h2>
+			<div class="education">
+			     <img src="image/education.png" width="50" height="auto" alt="education">
+				 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget pellentesque ipsum, ut vulputate quam.</p>
+			</div>
+			<div class="container">
+			<div class="a">
+			      <p>May 2014</p>
+				  <p>UG in B.sc ISM</p>
+				  <p><b>College Arts & Science,chennai.</b></p>
+				  <p>Achivements-particiated Extermpor Group Discussion</p>
+			</div>
+			<div>
+			    <p>78%</p>
+			</div>
+			</div>
+			<div class="container">
+			<div class="a">
+			       <p>April 2010</p>
+				   <p>HSC from Govt</p>
+				   <p><b>Govt hr sec school,chennai</b></p>
+				   <p>Achivements-particiated Extermpor Group Discussion</p>
+			</div>
+			<div>
+			  <p>88%</p>
+			  </div>
+			  </div>
+			  <div class="container">
+			<div class="a">
+			        <p>April 2008</p>
+					<p>SSLC from Govt</p>
+					<p><b>Govt hr sec school,chennai</b></p>
+					<p>Achivements-particiated Extermpor Group Discussion</p>
+			</div>
+			<div>
+			<p>94%</p>
+			</div>
+			</div>
+	 </section>
+	<!--education div end--->
+	 </section>
+	 <!--<section>
+	        <h2>Projects</h2>
+			<div>
+			     <img src="image/project-pic.png" width="50" height="auto" alt="project pc">
+				 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+			</div>
+			<div>
+			      <p>Final year project</p>
+				  <h4>Project Name</h4>
+				  <p> Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,<br/> and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
+				  <p>Techologies used:Java,MYSQL,DBMS</p>
+				  <p>Team Size:4members</p>
+			</div>
+			<div>
+			      <p>Final year project</p>
+				  <h4>Project Name</h4>
+				  <p> Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,<br/> and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
+				  <p>Techologies used:Java,MYSQL;DBMS</p>
+				  <p>Team Size:4members</p>
+			</div>
+	 </section>
+	 <hr>
+	 <section>
+	         <h2>Contacts</h2>
+			 <div>
+			     <p>We are just call away i'm active in all possible communication media.Make use of your prefred one given below.</p>
+			 <div>
+				 <span><img src="image/contact2.png" width="30" height="auto" alt="phone"></span>
+				 <span><img src="image/Email.png" width="30" height="auto" alt="mail"></span>
+				 <span><img src="image/internet.png" width="30" height="auto" alt="chrome"></span>
+				 <span><img src="image/facebook.png" width="30" height="auto" alt="FB"></span>
+				 <span><img src="image/google.png" width="30" height="auto" alt="google"></span>
+				 <span><img src="image/netin.png" width="30" height="auto" alt="linkedin"></span>
+				 <span><img src="image/twitter.png" width="30" height="auto" alt="twitter"></span>
+			 </div>
+			      <p><a href="#">www.sample.com</a>|All rights reserved</p>
+			 </div>
+	 </section>
+	 <hr>-->
+</body>
+</html>
